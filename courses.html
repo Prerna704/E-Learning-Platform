@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Courses | E-Learning Mini Platform</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Courses</h1>
+  <div id="navbar"></div>
+</header>
+
+<main class="container">
+
+  <section class="upload-card" id="uploadArea">
+    <h2>Upload Lesson / Resource</h2>
+    <form id="uploadForm">
+      <input type="text" id="lessonTitle" placeholder="Lesson Title" required>
+      <textarea id="lessonDesc" placeholder="Description" rows="3"></textarea>
+      <select id="lessonVisibility">
+        <option value="public">Public</option>
+        <option value="private">Private</option>
+      </select>
+      <input type="file" id="lessonFile" accept=".pdf,.png,.jpg,.jpeg,.txt">
+      <button type="submit">Add Lesson</button>
+    </form>
+  </section>
+
+  <section class="lessons-list">
+    <h2>Available Lessons</h2>
+    <div id="lessons"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <small>Built using HTML, CSS, JS & LocalStorage</small>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/courses.js"></script>
+</body>
+</html>

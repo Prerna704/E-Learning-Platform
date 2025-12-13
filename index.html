@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E-Learning Mini Platform</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>E-Learning Mini Platform</h1>
+  <div id="navbar"></div>
+</header>
+
+<main class="container">
+
+  <!-- Sign Up Form -->
+  <section class="auth-card" id="signupSection">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+      <input type="text" id="signupName" placeholder="Full Name" required>
+      <input type="email" id="signupEmail" placeholder="Email" required>
+      <input type="password" id="signupPassword" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+  </section>
+
+  <!-- Login Form -->
+  <section class="auth-card" id="loginSection" style="display:none;">
+    <h2>Login</h2>
+    <form id="signinForm">
+      <input type="email" id="signinEmail" placeholder="Email" required>
+      <input type="password" id="signinPassword" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" id="showSignup">Register here</a></p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <small>Built using HTML, CSS, JS & LocalStorage</small>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>
